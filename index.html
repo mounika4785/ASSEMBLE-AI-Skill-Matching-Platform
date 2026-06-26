@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assemble AI</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <h1 style="text-align:center; color:white;">
+  AI Student Matcher
+</h1>
+
+  <div class="container">
+
+    <h1>🤖 Assemble AI Matcher</h1>
+
+    <div class="input-box">
+      <span class="material-icons">search</span>
+      <input 
+        type="text" 
+        id="skillInput" 
+        placeholder="Enter skills (python, ai, ml)">
+    </div>
+
+    <button onclick="getMatches()">
+      <span class="material-icons">auto_awesome</span>
+      Find Matches
+    </button>
+
+    <div id="result"></div>
+
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+/* 🌈 Background */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Main container */
+.container {
+  text-align: center;
+  padding: 40px;
+  width: 90%;
+  max-width: 800px;
+}
+
+/* Title */
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+}
+
+/* Input box with icon */
+.input-box {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.1);
+  padding: 12px 15px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  margin-bottom: 20px;
+}
+
+.input-box span {
+  margin-right: 10px;
+  opacity: 0.8;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+}
+
+/* Button */
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #ff6a00, #ee0979);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255,255,255,0.4);
+}
+
+/* Results container */
+#result {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Cards */
+.card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 12px;
+  width: 250px;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: 0.3s;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Top candidate */
+.top {
+  border: 2px solid gold;
+  box-shadow: 0 0 20px gold;
+}
+
+/* Text styling */
+.score {
+  color: #00ffcc;
+  font-weight: bold;
+}
+
+.missing {
+  color: #ff6b6b;
+}
+
+.achievements {
+  color: #a0ff9f;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
